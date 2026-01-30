@@ -3,7 +3,6 @@
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus)
 ![Library](https://img.shields.io/badge/Library-SFML%202.6.2-brightgreen?style=for-the-badge)
 ![Build](https://img.shields.io/badge/Build-GNU%20Make-orange?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge&logo=windows)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 A modern, feature-rich implementation of the classic Snake game built with C++ and the SFML (Simple and Fast Multimedia Library). This project showcases object-oriented programming principles, game loop architecture, and real-time graphics rendering.
@@ -20,15 +19,11 @@ A modern, feature-rich implementation of the classic Snake game built with C++ a
 - [Project Structure](#-project-structure)
 - [File Descriptions](#-file-descriptions)
 - [Gameplay Mechanics](#-gameplay-mechanics)
-- [Building the Project](#-building-the-project)
 - [License](#-license)
-- [Author](#-author)
 
 ## 🎥 Demo
 
-_Demo video/GIF will be added here_
-
-<!-- Add your demo video or GIF here -->
+https://github.com/user-attachments/assets/ab3b6264-8c60-49ad-b3f1-b05f74f8a972
 
 ## ✨ Features
 
@@ -45,9 +40,6 @@ _Demo video/GIF will be added here_
 
 - **Language**: C++ (Modern C++ standards)
 - **Graphics Library**: SFML 2.6.2 (Simple and Fast Multimedia Library)
-- **Compiler**: MinGW-w64 GCC 13.1.0
-- **Build System**: GNU Make (Makefile)
-- **IDE**: Visual Studio Code
 
 ## 📋 Prerequisites
 
@@ -193,7 +185,7 @@ SnakeGame-SFML/
 - `*.o` - Object files (Game.o, Snake.o, World.o, Window.o, Textbox.o, main.o)
 - `main.exe` - Compiled executable
 - `*.dll` - SFML runtime libraries (you'll need to copy these from your SFML installation)
-```
+
 
 ## 📝 File Descriptions
 
@@ -355,9 +347,8 @@ SnakeGame-SFML/
 - Score resets to 0 on game over
 
 ### Lives System
-- **3 lives** at game start
 - Lose a life when snake collides with itself
-- Game over occurs at 0 lives or wall collision
+- Game over occurs at wall collision or snake collides with itself
 
 ### Speed Progression
 - Base speed: 15 updates per second
@@ -368,67 +359,14 @@ SnakeGame-SFML/
 2. **Wall Collision**: Instant game over
 3. **Apple Collision**: Triggers growth and score increase
 
-## 🔨 Building the Project
-
-### Build Commands
-
-```bash
-# Standard build (with console for debugging)
-make
-
-# GUI-only build (no console window)
-make gui
-
-# Clean build artifacts
-make clean
-
-# Compile only (no linking)
-make compile
-
-# Full rebuild
-make clean && make
-```
-
-### Compiler Flags
-- `-Wall`: Enable all compiler warnings
-- `-mconsole`: Include console window (debugging)
-- `-mwindows`: GUI-only mode (no console)
-
-### Output
-- **Executable**: `main.exe`
-- **Object Files**: `*.o` (Game.o, Snake.o, World.o, Window.o, Textbox.o, main.o)
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
 
-```
-MIT License
-
-Copyright (c) 2026 Amr Wahidi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 See the [LICENSE](LICENSE) file for full details.
 
-## 👨‍💻 Author
+## Author
 
 **Amr Wahidi**
 

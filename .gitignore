@@ -39,3 +39,29 @@
 
 # debug information files
 *.dwo
+
+.vscode/
+*.code-workspace
+
+
+build/
+bin/
+Debug/
+Release/
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
